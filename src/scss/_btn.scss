@@ -1,0 +1,51 @@
+.btn {
+   display: block;
+   font-family: "Roboto", sans-serif;
+   font-size: 12px;
+   font-weight: 900;
+   line-height: 24px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: #5101A6;
+   border-radius: 6px;
+   background: linear-gradient(#3e8e41, #3e8e41) no-repeat;
+   background-color: #FFF;
+   background-size: 100% 0;
+   transition: background-size 0.5s, color 0.5s;
+
+   @media (max-width:460px) {
+      line-height: 18px;
+
+   }
+
+   &:hover {
+      background-size: 100% 100%;
+      color: #fff;
+   }
+
+   &:active {
+      transform: translateY(2px);
+   }
+
+   &--long {
+      max-width: 180px;
+      width: 100%;
+      padding: 8px 0px;
+
+      @media (max-width:460px) {
+         max-width: 140px;
+         width: 100%;
+      }
+   }
+
+   &--short {
+      max-width: 156px;
+      width: 100%;
+      padding: 12px 0px;
+
+      @media (max-width:460px) {
+         padding: 10px 0px;
+      }
+   }
+
+}
